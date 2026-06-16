@@ -2,6 +2,7 @@
 
 
 // ROLES API TESTING
+
 ###
 ### Create Role
 POST http://localhost:5051/api/roles
@@ -29,3 +30,44 @@ Content-Type: application/json
   "name": "Super Admin",
   "description": "Updated system administrator role"
 }
+
+
+// USERS API TESTING
+
+### Create User
+POST http://localhost:5051/api/users
+Content-Type: application/json
+
+{
+  "firstName": "Etsub",
+  "lastName": "Beza",
+  "email": "etsub@example.com",
+  "password": "Password123",
+  "phoneNumber": "0912345678",
+  "roleId": 1
+}
+
+### Get All Users
+GET http://localhost:5051/api/users
+
+### Get User By Id
+GET http://localhost:5051/api/users/1
+
+### Update User
+PUT http://localhost:5051/api/users/1
+Content-Type: application/json
+
+{
+  "firstName": "Etsub",
+  "lastName": "Beza Updated",
+  "email": "etsub@example.com",
+  "phoneNumber": "0999999999",
+  "roleId": 1,
+  "isActive": true
+}
+
+### Delete User
+DELETE http://localhost:5051/api/users/1
+
+### Verify Delete
+GET http://localhost:5051/api/users/1

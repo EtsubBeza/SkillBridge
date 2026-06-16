@@ -10,6 +10,7 @@ builder.Services.AddSwaggerGen();
 
 // Dependency Injection
 builder.Services.AddSingleton<IRoleService, RoleService>();
+builder.Services.AddSingleton<IUserService, UserService>();
 
 var app = builder.Build();
 
