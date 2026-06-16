@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 // Dependency Injection
 builder.Services.AddSingleton<IRoleService, RoleService>();
 builder.Services.AddSingleton<IUserService, UserService>();
-
+builder.Services.AddSingleton<IGraduateProfileService, GraduateProfileService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline

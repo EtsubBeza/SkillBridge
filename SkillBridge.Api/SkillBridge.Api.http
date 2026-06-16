@@ -34,6 +34,7 @@ Content-Type: application/json
 
 // USERS API TESTING
 
+
 ### Create User
 POST http://localhost:5051/api/users
 Content-Type: application/json
@@ -71,3 +72,48 @@ DELETE http://localhost:5051/api/users/1
 
 ### Verify Delete
 GET http://localhost:5051/api/users/1
+
+
+
+// GRADUATE PROFILES API TESTING
+
+### Create Graduate Profile
+POST http://localhost:5051/api/graduateprofiles
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "headline": "Junior Full Stack Developer",
+  "bio": "Recent graduate passionate about .NET and Angular.",
+  "education": "BSc Software Engineering",
+  "university": "Debark University",
+  "graduationYear": 2026,
+  "portfolioUrl": "https://portfolio.example.com"
+}
+
+###
+
+GET http://localhost:5051/api/graduateprofiles
+
+###
+
+GET http://localhost:5051/api/graduateprofiles/1
+
+###
+
+PUT http://localhost:5051/api/graduateprofiles/1
+Content-Type: application/json
+
+{
+  "headline": "Junior Fullstack Developer",
+  "bio": "Focused on ASP.NET Core and REST APIs.",
+  "education": "BSc Computer Science",
+  "university": "Debark University",
+  "graduationYear": 2026,
+  "portfolioUrl": "https://portfolio.example.com",
+  "isAvailableForWork": true
+}
+
+###
+
+DELETE http://localhost:5051/api/graduateprofiles/1
