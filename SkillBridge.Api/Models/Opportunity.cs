@@ -14,7 +14,11 @@ public class Opportunity
 
     public string Location { get; set; } = string.Empty;
 
-    public string Type { get; set; } = string.Empty;
+    public string EmploymentType { get; set; } = string.Empty;
 
-    public DateTime Deadline { get; set; }
+    public decimal Salary { get; set; }
+
+    public bool IsActive { get; set; }
+
+    public DateTime CreatedAt { get; set; }
 }
