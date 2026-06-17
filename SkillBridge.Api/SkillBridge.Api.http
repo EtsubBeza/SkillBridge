@@ -117,3 +117,45 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:5051/api/graduateprofiles/1
+
+
+// EMPLOYER PROFILES API TESTING
+
+### Create Employer Profile
+POST http://localhost:5051/api/employerprofiles
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "companyName": "Tech Solutions",
+  "industry": "Software Development",
+  "companyDescription": "Building modern business applications.",
+  "websiteUrl": "https://techsolutions.com",
+  "location": "Addis Ababa"
+}
+
+###
+
+GET http://localhost:5051/api/employerprofiles
+
+###
+
+GET http://localhost:5051/api/employerprofiles/1
+
+###
+
+PUT http://localhost:5051/api/employerprofiles/1
+Content-Type: application/json
+
+{
+  "companyName": "Tech Solutions Ltd",
+  "industry": "Software Development",
+  "companyDescription": "Building modern .NET and Angular applications.",
+  "websiteUrl": "https://techsolutions.com",
+  "location": "Addis Ababa",
+  "isVerified": true
+}
+
+###
+
+DELETE http://localhost:5051/api/employerprofiles/1

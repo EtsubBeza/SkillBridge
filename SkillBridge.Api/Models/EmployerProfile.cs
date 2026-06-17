@@ -12,7 +12,11 @@ public class EmployerProfile
 
     public string CompanyDescription { get; set; } = string.Empty;
 
-    public string Website { get; set; } = string.Empty;
+    public string WebsiteUrl { get; set; } = string.Empty;
 
     public string Location { get; set; } = string.Empty;
+
+    public bool IsVerified { get; set; }
+
+    public DateTime CreatedAt { get; set; }
 }
