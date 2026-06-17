@@ -13,6 +13,7 @@ builder.Services.AddSingleton<IRoleService, RoleService>();
 builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddSingleton<IGraduateProfileService, GraduateProfileService>();
 builder.Services.AddSingleton<IEmployerProfileService, EmployerProfileService>();
+builder.Services.AddSingleton<ISkillService, SkillService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
