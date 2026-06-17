@@ -1,11 +1,11 @@
-@SkillBridge.Api_HostAddress = http://localhost:5051
+@SkillBridgeApi_HostAddress = http://localhost:5051
 
 
 // ROLES API TESTING
 
 ###
 ### Create Role
-POST http://localhost:5051/api/roles
+POST {{SkillBridgeApi_HostAddress}}/api/roles
 Content-Type: application/json
 
 {
@@ -14,16 +14,16 @@ Content-Type: application/json
 }
 
 ### Get All Roles
-GET http://localhost:5051/api/roles
+GET {{SkillBridgeApi_HostAddress}}/api/roles
 
 ### Get Role by Id
-GET http://localhost:5051/api/roles/1
+GET {{SkillBridgeApi_HostAddress}}/api/roles/1
 
 ### Delete Role
-DELETE http://localhost:5051/api/roles/2
+DELETE {{SkillBridgeApi_HostAddress}}/api/roles/1
 
 ### Update Role
-PUT http://localhost:5051/api/roles/1
+PUT {{SkillBridgeApi_HostAddress}}/api/roles/1
 Content-Type: application/json
 
 {
@@ -36,7 +36,7 @@ Content-Type: application/json
 
 
 ### Create User
-POST http://localhost:5051/api/users
+POST {{SkillBridgeApi_HostAddress}}/api/users
 Content-Type: application/json
 
 {
@@ -49,13 +49,13 @@ Content-Type: application/json
 }
 
 ### Get All Users
-GET http://localhost:5051/api/users
+GET {{SkillBridgeApi_HostAddress}}/api/users
 
 ### Get User By Id
-GET http://localhost:5051/api/users/1
+GET {{SkillBridgeApi_HostAddress}}/api/users/1
 
 ### Update User
-PUT http://localhost:5051/api/users/1
+PUT {{SkillBridgeApi_HostAddress}}/api/users/1
 Content-Type: application/json
 
 {
@@ -68,17 +68,17 @@ Content-Type: application/json
 }
 
 ### Delete User
-DELETE http://localhost:5051/api/users/1
+DELETE {{SkillBridgeApi_HostAddress}}/api/users/1
 
 ### Verify Delete
-GET http://localhost:5051/api/users/1
+GET {{SkillBridgeApi_HostAddress}}/api/users/1
 
 
 
 // GRADUATE PROFILES API TESTING
 
 ### Create Graduate Profile
-POST http://localhost:5051/api/graduateprofiles
+POST {{SkillBridgeApi_HostAddress}}/api/graduateprofiles
 Content-Type: application/json
 
 {
@@ -93,15 +93,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5051/api/graduateprofiles
+GET {{SkillBridgeApi_HostAddress}}/api/graduateprofiles
 
 ###
 
-GET http://localhost:5051/api/graduateprofiles/1
+GET {{SkillBridgeApi_HostAddress}}/api/graduateprofiles/1
 
 ###
 
-PUT http://localhost:5051/api/graduateprofiles/1
+PUT {{SkillBridgeApi_HostAddress}}/api/graduateprofiles/1
 Content-Type: application/json
 
 {
@@ -116,13 +116,13 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5051/api/graduateprofiles/1
+DELETE {{SkillBridgeApi_HostAddress}}/api/graduateprofiles/1
 
 
 // EMPLOYER PROFILES API TESTING
 
 ### Create Employer Profile
-POST http://localhost:5051/api/employerprofiles
+POST {{SkillBridgeApi_HostAddress}}/api/employerprofiles
 Content-Type: application/json
 
 {
@@ -136,15 +136,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5051/api/employerprofiles
+GET {{SkillBridgeApi_HostAddress}}/api/employerprofiles
 
 ###
 
-GET http://localhost:5051/api/employerprofiles/1
+GET {{SkillBridgeApi_HostAddress}}/api/employerprofiles/1
 
 ###
 
-PUT http://localhost:5051/api/employerprofiles/1
+PUT {{SkillBridgeApi_HostAddress}}/api/employerprofiles/1
 Content-Type: application/json
 
 {
@@ -158,13 +158,13 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5051/api/employerprofiles/1
+DELETE {{SkillBridgeApi_HostAddress}}/api/employerprofiles/1
 
 
 // SKILLS API TESTING
 
 ### Create Skill
-POST http://localhost:5051/api/skills
+POST {{SkillBridgeApi_HostAddress}}/api/skills
 Content-Type: application/json
 
 {
@@ -176,15 +176,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5051/api/skills
+GET {{SkillBridgeApi_HostAddress}}/api/skills
 
 ###
 
-GET http://localhost:5051/api/skills/1
+GET {{SkillBridgeApi_HostAddress}}/api/skills/1
 
 ###
 
-PUT http://localhost:5051/api/skills/1
+PUT {{SkillBridgeApi_HostAddress}}/api/skills/1
 Content-Type: application/json
 
 {
@@ -195,14 +195,14 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5051/api/skills/1
+DELETE {{SkillBridgeApi_HostAddress}}/api/skills/1
 
 
 
 // OPPORTUNITIES API TESTING
 
 ### Create Opportunity
-POST http://localhost:5051/api/opportunities
+POST {{SkillBridgeApi_HostAddress}}/api/opportunities
 Content-Type: application/json
 
 {
@@ -217,15 +217,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5051/api/opportunities
+GET {{SkillBridgeApi_HostAddress}}/api/opportunities
 
 ###
 
-GET http://localhost:5051/api/opportunities/1
+GET {{SkillBridgeApi_HostAddress}}/api/opportunities/1
 
 ###
 
-PUT http://localhost:5051/api/opportunities/1
+PUT {{SkillBridgeApi_HostAddress}}/api/opportunities/1
 Content-Type: application/json
 
 {
@@ -240,4 +240,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5051/api/opportunities/1
+DELETE {{SkillBridgeApi_HostAddress}}/api/opportunities/1
