@@ -10,9 +10,11 @@ public class PortfolioProject
 
     public string Description { get; set; } = string.Empty;
 
+    public string TechnologiesUsed { get; set; } = string.Empty;
+
+    public string ProjectUrl { get; set; } = string.Empty;
+
     public string GithubUrl { get; set; } = string.Empty;
 
-    public string DemoUrl { get; set; } = string.Empty;
-
-    public DateTime CreatedDate { get; set; }
+    public DateTime CreatedAt { get; set; }
 }

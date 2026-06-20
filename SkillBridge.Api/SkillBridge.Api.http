@@ -274,3 +274,45 @@ Content-Type: application/json
 ###
 
 DELETE {{SkillBridgeApi_HostAddress}}/api/applications/1
+
+
+
+// PORTFOLIO PROJECTS API TESTING
+
+### Create Portfolio Project
+POST {{SkillBridgeApi_HostAddress}}/api/portfolioprojects
+Content-Type: application/json
+
+{
+  "graduateProfileId": 1,
+  "title": "SkillBridge",
+  "description": "A platform that helps recent graduates find opportunities.",
+  "technologiesUsed": "ASP.NET Core, C#, REST API",
+  "projectUrl": "https://skillbridge.com",
+  "githubUrl": "https://github.com/example/skillbridge"
+}
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/portfolioprojects
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/portfolioprojects/1
+
+###
+
+PUT {{SkillBridgeApi_HostAddress}}/api/portfolioprojects/1
+Content-Type: application/json
+
+{
+  "title": "SkillBridge Platform",
+  "description": "Updated project description.",
+  "technologiesUsed": "ASP.NET Core, C#, SQL Server",
+  "projectUrl": "https://skillbridge.com",
+  "githubUrl": "https://github.com/example/skillbridge"
+}
+
+###
+
+DELETE {{SkillBridgeApi_HostAddress}}/api/portfolioprojects/1

@@ -16,7 +16,7 @@ builder.Services.AddSingleton<IEmployerProfileService, EmployerProfileService>()
 builder.Services.AddSingleton<ISkillService, SkillService>();
 builder.Services.AddSingleton<IOpportunityService, OpportunityService>();
 builder.Services.AddSingleton<IApplicationService, ApplicationService>();
-
+builder.Services.AddSingleton<IPortfolioProjectService, PortfolioProjectService>();
 var app = builder.Build();
 
 
