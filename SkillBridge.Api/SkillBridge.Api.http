@@ -241,3 +241,36 @@ Content-Type: application/json
 ###
 
 DELETE {{SkillBridgeApi_HostAddress}}/api/opportunities/1
+
+// APPLICATIONS API TESTING
+
+### Create Application
+POST {{SkillBridgeApi_HostAddress}}/api/applications
+Content-Type: application/json
+
+{
+  "opportunityId": 1,
+  "graduateProfileId": 1,
+  "coverLetter": "I recently graduated and would love the opportunity to contribute and learn."
+}
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/applications
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/applications/1
+
+###
+
+PUT {{SkillBridgeApi_HostAddress}}/api/applications/1
+Content-Type: application/json
+
+{
+  "status": "Accepted"
+}
+
+###
+
+DELETE {{SkillBridgeApi_HostAddress}}/api/applications/1
