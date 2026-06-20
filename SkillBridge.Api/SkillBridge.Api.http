@@ -316,3 +316,42 @@ Content-Type: application/json
 ###
 
 DELETE {{SkillBridgeApi_HostAddress}}/api/portfolioprojects/1
+
+
+
+
+// ASSESSMENTS API TESTING
+
+### Create Assessment
+POST {{SkillBridgeApi_HostAddress}}/api/assessments
+Content-Type: application/json
+
+{
+  "opportunityId": 1,
+  "title": "ASP.NET Core Assessment",
+  "description": "Basic backend development assessment.",
+  "passingScore": 70
+}
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/assessments
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/assessments/1
+
+###
+
+PUT {{SkillBridgeApi_HostAddress}}/api/assessments/1
+Content-Type: application/json
+
+{
+  "title": "Advanced ASP.NET Core Assessment",
+  "description": "Updated assessment description.",
+  "passingScore": 75
+}
+
+###
+
+DELETE {{SkillBridgeApi_HostAddress}}/api/assessments/1

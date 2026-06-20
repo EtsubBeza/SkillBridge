@@ -17,6 +17,7 @@ builder.Services.AddSingleton<ISkillService, SkillService>();
 builder.Services.AddSingleton<IOpportunityService, OpportunityService>();
 builder.Services.AddSingleton<IApplicationService, ApplicationService>();
 builder.Services.AddSingleton<IPortfolioProjectService, PortfolioProjectService>();
+builder.Services.AddSingleton<IAssessmentService, AssessmentService>();
 var app = builder.Build();
 
 
