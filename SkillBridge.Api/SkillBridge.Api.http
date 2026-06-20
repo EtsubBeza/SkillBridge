@@ -355,3 +355,38 @@ Content-Type: application/json
 ###
 
 DELETE {{SkillBridgeApi_HostAddress}}/api/assessments/1
+
+
+
+// NOTIFICATIONS API TESTING
+
+### Create Notification
+POST {{SkillBridgeApi_HostAddress}}/api/notifications
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Application Accepted",
+  "message": "Congratulations! Your application has been accepted."
+}
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/notifications
+
+###
+
+GET {{SkillBridgeApi_HostAddress}}/api/notifications/1
+
+###
+
+PUT {{SkillBridgeApi_HostAddress}}/api/notifications/1
+Content-Type: application/json
+
+{
+  "isRead": true
+}
+
+###
+
+DELETE {{SkillBridgeApi_HostAddress}}/api/notifications/1
